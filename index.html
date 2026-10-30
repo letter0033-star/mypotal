@@ -226,21 +226,21 @@
                     <i class="fas fa-th-large text-xs"></i>
                     <span>전체 보기 (32)</span>
                 </button>
-                <button onclick="filterSection('promo')" id="tab-promo" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-200 flex items-center gap-1.5">
-                    <i class="fas fa-bullhorn text-indigo-500 text-xs"></i>
-                    <span>학교 홍보 (8)</span>
+                <button onclick="filterSection('presentation')" id="tab-presentation" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-pink-50 hover:text-pink-600 hover:border-pink-200 flex items-center gap-1.5">
+                    <i class="fas fa-tv text-pink-500 text-xs"></i>
+                    <span>발표 자료 (8)</span>
                 </button>
                 <button onclick="filterSection('training')" id="tab-training" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-cyan-50 hover:text-cyan-600 hover:border-cyan-200 flex items-center gap-1.5">
                     <i class="fas fa-chalkboard-teacher text-cyan-600 text-xs"></i>
                     <span>연수 자료 (8)</span>
                 </button>
-                <button onclick="filterSection('presentation')" id="tab-presentation" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-pink-50 hover:text-pink-600 hover:border-pink-200 flex items-center gap-1.5">
-                    <i class="fas fa-tv text-pink-500 text-xs"></i>
-                    <span>발표 자료 (8)</span>
-                </button>
                 <button onclick="filterSection('etc')" id="tab-etc" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 flex items-center gap-1.5">
                     <i class="fas fa-folder-open text-emerald-500 text-xs"></i>
                     <span>기타 자료 (8)</span>
+                </button>
+                <button onclick="filterSection('promo')" id="tab-promo" class="tab-btn px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-extrabold border border-slate-200 text-slate-700 bg-white hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-200 flex items-center gap-1.5">
+                    <i class="fas fa-bullhorn text-indigo-500 text-xs"></i>
+                    <span>학교 홍보 (8)</span>
                 </button>
             </div>
 
@@ -261,135 +261,132 @@
         <main class="space-y-6">
 
             <!-- ==========================================
-                 1. 학교 홍보 영역 (8개 배지)
+                 1. 발표 자료 영역 (8개 배지)
             =========================================== -->
-            <section id="section-promo" class="section-container p-4 md:p-6 space-y-4 border-t-4 border-t-indigo-500">
+            <section id="section-presentation" class="section-container p-4 md:p-6 space-y-4 border-t-4 border-t-pink-600">
                 <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20">
-                            <i class="fas fa-bullhorn text-lg"></i>
+                        <div class="w-10 h-10 rounded-xl bg-pink-600 text-white flex items-center justify-center shadow-md shadow-pink-500/20">
+                            <i class="fas fa-tv text-lg"></i>
                         </div>
                         <div>
                             <div class="flex items-center gap-2">
-                                <h3 class="text-lg md:text-xl font-black text-slate-800">학교 홍보</h3>
-                                <span class="bg-indigo-100 text-indigo-700 text-[11px] font-extrabold px-2 py-0.5 rounded-full">8개 영역</span>
+                                <h3 class="text-lg md:text-xl font-black text-slate-800">발표 자료</h3>
+                                <span class="bg-pink-100 text-pink-700 text-[11px] font-extrabold px-2 py-0.5 rounded-full">8개 영역</span>
                             </div>
-                            <p class="text-slate-500 text-xs md:text-sm font-medium">학교 교육활동 홍보물, 안내장, 리플릿 및 홍보 영상·웹페이지 모음</p>
+                            <p class="text-slate-500 text-xs md:text-sm font-medium">사례 발표, 워크숍, 세미나 및 각종 보고회 프레젠테이션 자료 모음</p>
                         </div>
                     </div>
-                    <span class="text-[11px] md:text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg border border-indigo-100">
-                        <i class="fas fa-check-circle mr-1"></i>1개 등록됨
+                    <span class="text-[11px] md:text-xs font-bold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-lg border border-pink-100">
+                        <i class="fas fa-check-circle mr-1"></i>2개 등록됨
                     </span>
                 </div>
 
-                <!-- 학교 홍보 배지 그리드 (4열 2단 = 8개) -->
+                <!-- 발표 자료 배지 그리드 (4열 2단 = 8개) -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-                    <!-- [학교 홍보] 배지 1: 가족 책 읽기의 밤 -->
-                    <a href="https://letter0033-star.github.io/bookschool/" target="_blank" class="badge-card white-card card-1 py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 1: 교장자격연수 분임발표자료 -->
+                    <a href="https://letter0033-star.github.io/presentation/" target="_blank" class="badge-card white-card card-3 py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
-                            <i class="fas fa-book-open text-lg"></i>
+                            <i class="fas fa-tv text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
-                            <span class="text-sm md:text-base font-extrabold text-indigo-950 truncate">가족 책 읽기의 밤</span>
-                            <p class="text-indigo-900/75 text-xs font-semibold truncate">2026.9.11.(금) 저녁 7시 신입생 예정자 대상 행사</p>
+                            <span class="text-sm md:text-base font-extrabold text-pink-950 truncate">교장자격연수 분임발표자료</span>
+                            <p class="text-pink-900/75 text-xs font-semibold truncate">2026.10.22.(목) 4차 6반 분임발표 자료</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 2 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 2)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 2: 문해력은 관계속에서 자랍니다 -->
+                    <a href="https://letter0033-star.github.io/book_literacy/" target="_blank" class="badge-card white-card card-3 py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-tv text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <span class="text-sm md:text-base font-extrabold text-pink-950 truncate">문해력은 관계속에서 자랍니다</span>
+                            <p class="text-pink-900/75 text-xs font-semibold truncate">2026.11.20.(금) 학부모특강</p>
+                        </div>
+                    </a>
+
+                    <!-- [발표 자료] 배지 3 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 3)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 02</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 03</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 3 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 3)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 4 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 4)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 03</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 04</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 4 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 4)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 5 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 5)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 04</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 05</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 5 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 5)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 6 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 6)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 05</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 06</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 6 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 6)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 7 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 7)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 06</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 07</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
 
-                    <!-- [학교 홍보] 배지 7 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 7)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                    <!-- [발표 자료] 배지 8 -->
+                    <a href="#" onclick="openReadyModal(event, '발표 자료', 8)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
                         <div class="icon-box shadow-sm">
                             <i class="fas fa-hourglass-half text-lg"></i>
                         </div>
                         <div class="flex flex-col text-left min-w-0 flex-1">
                             <div class="flex items-center justify-between gap-1">
                                 <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 07</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 08</span>
                             </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [학교 홍보] 배지 8 -->
-                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 8)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 08</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
                         </div>
                     </a>
                 </div>
@@ -534,142 +531,7 @@
             </section>
 
             <!-- ==========================================
-                 3. 발표 자료 영역 (8개 배지)
-            =========================================== -->
-            <section id="section-presentation" class="section-container p-4 md:p-6 space-y-4 border-t-4 border-t-pink-600">
-                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-pink-600 text-white flex items-center justify-center shadow-md shadow-pink-500/20">
-                            <i class="fas fa-tv text-lg"></i>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <h3 class="text-lg md:text-xl font-black text-slate-800">발표 자료</h3>
-                                <span class="bg-pink-100 text-pink-700 text-[11px] font-extrabold px-2 py-0.5 rounded-full">8개 영역</span>
-                            </div>
-                            <p class="text-slate-500 text-xs md:text-sm font-medium">사례 발표, 워크숍, 세미나 및 각종 보고회 프레젠테이션 자료 모음</p>
-                        </div>
-                    </div>
-                    <span class="text-[11px] md:text-xs font-bold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-lg border border-pink-100">
-                        <i class="fas fa-check-circle mr-1"></i>1개 등록됨
-                    </span>
-                </div>
-
-                <!-- 발표 자료 배지 그리드 (4열 2단 = 8개) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-                    <!-- [발표 자료] 배지 1: 교장자격연수 분임발표자료 -->
-                    <a href="https://letter0033-star.github.io/presentation/" target="_blank" class="badge-card white-card card-3 py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-tv text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <span class="text-sm md:text-base font-extrabold text-pink-950 truncate">교장자격연수 분임발표자료</span>
-                            <p class="text-pink-900/75 text-xs font-semibold truncate">2026.10.22.(목) 4차 6반 분임발표 자료</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 2 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 2)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 02</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 3 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 3)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 03</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 4 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 4)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 04</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 5 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 5)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 05</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 6 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 6)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 06</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 7 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 7)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 07</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-
-                    <!-- [발표 자료] 배지 8 -->
-                    <a href="#" onclick="openReadyModal(event, '발표 자료', 8)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
-                        <div class="icon-box shadow-sm">
-                            <i class="fas fa-hourglass-half text-lg"></i>
-                        </div>
-                        <div class="flex flex-col text-left min-w-0 flex-1">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
-                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">발표자료 08</span>
-                            </div>
-                            <p class="text-slate-400 text-xs font-medium truncate">발표 자료 준비중입니다.</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- ==========================================
-                 4. 기타 자료 영역 (8개 배지)
+                 3. 기타 자료 영역 (8개 배지)
             =========================================== -->
             <section id="section-etc" class="section-container p-4 md:p-6 space-y-4 border-t-4 border-t-emerald-600">
                 <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
@@ -803,6 +665,141 @@
                 </div>
             </section>
 
+            <!-- ==========================================
+                 4. 학교 홍보 영역 (8개 배지)
+            =========================================== -->
+            <section id="section-promo" class="section-container p-4 md:p-6 space-y-4 border-t-4 border-t-indigo-500">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20">
+                            <i class="fas fa-bullhorn text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg md:text-xl font-black text-slate-800">학교 홍보</h3>
+                                <span class="bg-indigo-100 text-indigo-700 text-[11px] font-extrabold px-2 py-0.5 rounded-full">8개 영역</span>
+                            </div>
+                            <p class="text-slate-500 text-xs md:text-sm font-medium">학교 교육활동 홍보물, 안내장, 리플릿 및 홍보 영상·웹페이지 모음</p>
+                        </div>
+                    </div>
+                    <span class="text-[11px] md:text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg border border-indigo-100">
+                        <i class="fas fa-check-circle mr-1"></i>1개 등록됨
+                    </span>
+                </div>
+
+                <!-- 학교 홍보 배지 그리드 (4열 2단 = 8개) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                    <!-- [학교 홍보] 배지 1: 가족 책 읽기의 밤 -->
+                    <a href="https://letter0033-star.github.io/bookschool/" target="_blank" class="badge-card white-card card-1 py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-book-open text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <span class="text-sm md:text-base font-extrabold text-indigo-950 truncate">가족 책 읽기의 밤</span>
+                            <p class="text-indigo-900/75 text-xs font-semibold truncate">2026.9.11.(금) 저녁 7시 신입생 예정자 대상 행사</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 2 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 2)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 02</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 3 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 3)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 03</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 4 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 4)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 04</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 5 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 5)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 05</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 6 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 6)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 06</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 7 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 7)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 07</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+
+                    <!-- [학교 홍보] 배지 8 -->
+                    <a href="#" onclick="openReadyModal(event, '학교 홍보', 8)" class="badge-card white-card card-disabled py-3 px-4 gap-3.5">
+                        <div class="icon-box shadow-sm">
+                            <i class="fas fa-hourglass-half text-lg"></i>
+                        </div>
+                        <div class="flex flex-col text-left min-w-0 flex-1">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="text-sm md:text-base font-extrabold text-slate-700 truncate">준비중</span>
+                                <span class="text-[10px] font-extrabold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">학교홍보 08</span>
+                            </div>
+                            <p class="text-slate-400 text-xs font-medium truncate">학교 홍보 자료 준비중입니다.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
         </main>
 
         <!-- 하단 안내 및 푸터 (교감포털 스타일 계승) -->
@@ -825,7 +822,7 @@
             <footer class="text-slate-500 text-[10px] md:text-xs flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
                 <span class="font-black text-slate-500">© 개발자용 자료 모음 포털 Developer Resource Archive Portal</span>
                 <span class="hidden md:inline text-slate-500">|</span>
-                <span class="text-slate-500 font-semibold">학교 홍보 · 연수 자료 · 발표 자료 · 기타 자료 통합 아카이브</span>
+                <span class="text-slate-500 font-semibold">발표 자료 · 연수 자료 · 기타 자료 · 학교 홍보 통합 아카이브</span>
             </footer>
         </div>
     </div>
